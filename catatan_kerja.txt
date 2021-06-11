@@ -35,4 +35,5 @@ VIEW
 	-template:
 		header (ok)
 		footer (ok)
+	-home (ok)
 
