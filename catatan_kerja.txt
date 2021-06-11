@@ -1,4 +1,4 @@
-
+===========Base code
 config: ok
 	config done
 
@@ -27,4 +27,12 @@ view :
 model : ok
 	User_model
 	Mahasiswa_model
+
+
+============Transform
+
+VIEW
+	-template:
+		header (ok)
+		footer (ok)
 
