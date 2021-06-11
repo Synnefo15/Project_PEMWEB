@@ -1,0 +1,30 @@
+
+config: ok
+	config done
+
+
+core: ok
+	App done
+	Controllers done
+	Database done
+	flasher done
+
+controller: ok
+	Home
+	Mahasiswa
+	About
+
+view :
+	templates-- ok
+		footer
+		header
+	home-- ok
+	mahasiswa-- ok
+	about --
+		index ok
+		page not
+
+model : ok
+	User_model
+	Mahasiswa_model
+
