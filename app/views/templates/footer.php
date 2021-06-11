@@ -22,9 +22,9 @@
 			<div class="col-md-4 pt-5">
 				<h2 class="h4 text-light border-bottom pb-3 border-light">Pangan</h2>
 				<ul class="list-unstyled text-light footer-link-list">
-					<li><a class="text-decoration-none" href="#">Luxury</a></li>
-					<li><a class="text-decoration-none" href="#">Sport Wear</a></li>
-					<li><a class="text-decoration-none" href="#">Men's Shoes</a></li>
+					<li><a class="text-decoration-none" href="#">Beras</a></li>
+					<li><a class="text-decoration-none" href="#">Daging</a></li>
+					<li><a class="text-decoration-none" href="#">Telur</a></li>
 					
 				</ul>
 			</div>

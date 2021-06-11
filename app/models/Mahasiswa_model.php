@@ -1,7 +1,7 @@
 <?php
 class Mahasiswa_model
 {
-    private $table = 'mahasiswa';
+    private $table = 'kota';
     private $db;
 
     public function __construct()
@@ -47,14 +47,13 @@ class Mahasiswa_model
 
     public function tambahDataMahasiswa($data)
     {
-        $query = "INSERT INTO mahasiswa
+        $query = "INSERT INTO kota
                     Values 
-                    ('', :nama, :nim, :email, :jurusan)";
+                    ('', :nama_kota, :provinsi)";
         $this->db->query($query);
-        $this->db->bind('nama', $data['nama']);
-        $this->db->bind('nim', $data['nim']);
-        $this->db->bind('email', $data['email']);
-        $this->db->bind('jurusan', $data['jurusan']);
+        $this->db->bind('nama_kota', $data['nama_kota']);
+        $this->db->bind('provinsi', $data['provinsi']);
+        
 
         $this->db->execute();
 
@@ -63,7 +62,7 @@ class Mahasiswa_model
 
     public function hapusDataMahasiswa($id)
     {
-        $query = "DELETE FROM mahasiswa WHERE id = :id";
+        $query = "DELETE FROM kota WHERE id = :id";
         $this->db->query($query);
         $this->db->bind('id', $id);
 

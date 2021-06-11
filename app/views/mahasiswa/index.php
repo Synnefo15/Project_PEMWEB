@@ -16,7 +16,7 @@
             <ul class="list-group">
                 <?php foreach ($data['mhs'] as $mhs) : ?>
                 <li class="list-group-item">
-                    <?= $mhs['nama']; ?>
+                    <?= $mhs['nama_kota']; ?>
                     <a href="<?= BASEURL; ?>/mahasiswa/hapus/<?= $mhs['id']; ?>"
                         class="badge badge-danger float-right ml-1" onclick="return confirm ('yakin?')">Hapus</a>
                     <a href="<?= BASEURL; ?>/mahasiswa/detail/<?= $mhs['id']; ?>"
@@ -40,26 +40,14 @@
             <div class="modal-body">
                 <form action="<?= BASEURL; ?>/mahasiswa/tambah" method="POST">
                     <div class="form-group">
-                        <label for="nama">Nama</label>
-                        <input type="text" class="form-control" id="nama" name="nama">
+                        <label for="nama_kota">Nama Kota</label>
+                        <input type="text" class="form-control" id="nama_kota" name="nama_kota">
                     </div>
                     <div class="form-group">
-                        <label for="nim">nim</label>
-                        <input type="number" class="form-control" id="nim" name="nim">
+                        <label for="provinsi">Provinsi</label>
+                        <input type="number" class="form-control" id="provinsi" name="provinsi">
                     </div>
-                    <div class="form-group">
-                        <label for="email">email</label>
-                        <input type="email" class="form-control" id="email" name="email">
-                    </div>
-                    <div class="form-group">
-                        <label for="jurusan">jurusan</label>
-                        <select class="form-control" id="jurusan" name="jurusan">
-                            <option value="Teknologi Informasi">Teknologi Informasi</option>
-                            <option value="Sistem Informasi">Sistem Informasi</option>
-                            <option value="Informatika">Informatika</option>
-
-                        </select>
-                    </div>
+                    
                     <br>*2
             </div>
             <div class="modal-footer">
