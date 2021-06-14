@@ -1,5 +1,5 @@
 <?php
-class Mahasiswa_model
+class Barang_model
 {
     private $table = 'kota';
     private $db;

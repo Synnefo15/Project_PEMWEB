@@ -55,7 +55,7 @@
                                 <a class="nav-link" href="<?= BASEURL; ?>">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="<?= BASEURL; ?>/mahasiswa">Pangan</a>
+                                <a class="nav-link" href="<?= BASEURL; ?>/barang">Pangan</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="<?= BASEURL; ?>/about">About</a>
@@ -106,7 +106,7 @@
                             <a class="nav-link" href="<?= BASEURL; ?>">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="<?= BASEURL; ?>/mahasiswa">Mahasiswa</a>
+                            <a class="nav-link" href="<?= BASEURL; ?>/barang">barang</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="<?= BASEURL; ?>/about">About</a>
