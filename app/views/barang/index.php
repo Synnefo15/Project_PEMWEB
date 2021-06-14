@@ -14,12 +14,12 @@
             <br><br>
             <h3>Daftar Barang</h3>
             <ul class="list-group">
-                <?php foreach ($data['kota'] as $kota) : ?>
+                <?php foreach ($data['pangan'] as $pangan) : ?>
                 <li class="list-group-item">
-                    <?= $kota['nama_kota']; ?>
-                    <a href="<?= BASEURL; ?>/barang/hapus/<?= $kota['id']; ?>"
+                    <?= $pangan['komoditas']; ?>
+                    <a href="<?= BASEURL; ?>/barang/hapus/<?= $pangan['id']; ?>"
                         class="badge badge-danger float-right ml-1" onclick="return confirm ('yakin?')">Hapus</a>
-                    <a href="<?= BASEURL; ?>/barang/detail/<?= $kota['id']; ?>"
+                    <a href="<?= BASEURL; ?>/barang/detail/<?= $pangan['id']; ?>"
                         class="badge badge-primary float-right ml-2">Detail</a>
                 </li>
                 <?php endforeach; ?>
@@ -40,12 +40,12 @@
             <div class="modal-body">
                 <form action="<?= BASEURL; ?>/barang/tambah" method="POST">
                     <div class="form-group">
-                        <label for="nama_kota">Nama Kota</label>
-                        <input type="text" class="form-control" id="nama_kota" name="nama_kota">
+                        <label for="komoditas">Komoditas</label>
+                        <input type="text" class="form-control" id="komoditas" name="komoditas">
                     </div>
                     <div class="form-group">
-                        <label for="provinsi">Provinsi</label>
-                        <input type="number" class="form-control" id="provinsi" name="provinsi">
+                        <label for="harga">Harga</label>
+                        <input type="number" class="form-control" id="harga" name="harga">
                     </div>
                     
                     <br>
@@ -57,4 +57,4 @@
             </div>
         </div>
     </div>
-</div>
+</div> 

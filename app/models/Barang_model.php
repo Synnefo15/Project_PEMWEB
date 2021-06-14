@@ -1,7 +1,7 @@
 <?php
 class Barang_model
 {
-    private $table = 'kota';
+    private $table = 'pangan';
     private $db;
 
     public function __construct()
@@ -25,12 +25,14 @@ class Barang_model
 
     public function tambahDataBarang($data)
     {
-        $query = "INSERT INTO kota
+        $query = "INSERT INTO pangan
                     Values 
-                    ('', :nama_kota, :provinsi)";
+                    ('', :komoditas, :kategori, :kota, :harga)";
         $this->db->query($query);
-        $this->db->bind('nama_kota', $data['nama_kota']);
-        $this->db->bind('provinsi', $data['provinsi']);
+        $this->db->bind('komoditas', $data['komoditas']);
+        $this->db->bind('kategori', $data['kategori']);
+        $this->db->bind('kota', $data['kota']);
+        $this->db->bind('harga', $data['harga']);
         
 
         $this->db->execute();
@@ -40,7 +42,7 @@ class Barang_model
 
     public function hapusDataBarang($id)
     {
-        $query = "DELETE FROM kota WHERE id = :id";
+        $query = "DELETE FROM pangan WHERE id = :id";
         $this->db->query($query);
         $this->db->bind('id', $id);
 

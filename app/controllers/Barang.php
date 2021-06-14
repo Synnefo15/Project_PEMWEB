@@ -4,7 +4,7 @@ class Barang extends Controller
     public function index()
     {
         $data['title'] = 'Daftar Barang';
-        $data['kota'] = $this->model('Barang_model')->getAllBarang();
+        $data['pangan'] = $this->model('Barang_model')->getAllBarang();
         $this->view('templates/header', $data);
         $this->view('barang/index', $data);
         $this->view('templates/footer');
@@ -13,11 +13,19 @@ class Barang extends Controller
     public function detail($id)
     {
         $data['title'] = 'Detail Barang';
-        $data['kota'] = $this->model('Barang_model')->getBarangById($id);
+        $data['pangan'] = $this->model('Barang_model')->getBarangById($id);
         $this->view('templates/header', $data);
         $this->view('barang/detail', $data);
         $this->view('templates/footer');
     }
+
+    // try
+    // public function lihatlaporan()
+    // {
+    //     $data['title'] = 'Data Laporan Barang';
+    //     $data['pangan'] = $this->model('Barang_model')->getAllBarang();
+    //     $this->view('pangan/lihatlaporan', $data);
+    // }
 
     // * flasher
     public function tambah()
