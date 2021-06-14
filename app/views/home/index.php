@@ -59,7 +59,7 @@
 					</div>
 					<div class="col-lg-6 mb-0 d-flex align-items-center">
 						<div class="text-align-left">
-							<h1 class="h1">Panganku</h1>
+							<h1 class="h1 text-success"><b>Panganku<b/b> </h1>
 							<h3 class="h2">Lihat berita terkini seputar harga bahan pangan</h3>
 							<p>
 								Dengan "Panganku" anda akan mendapatkan informasi yang up to date mengenai kebutuhan pokok sehari-hari.
