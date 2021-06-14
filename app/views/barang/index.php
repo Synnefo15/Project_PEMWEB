@@ -14,12 +14,12 @@
             <br><br>
             <h3>Daftar Barang</h3>
             <ul class="list-group">
-                <?php foreach ($data['mhs'] as $mhs) : ?>
+                <?php foreach ($data['kota'] as $kota) : ?>
                 <li class="list-group-item">
-                    <?= $mhs['nama_kota']; ?>
-                    <a href="<?= BASEURL; ?>/barang/hapus/<?= $mhs['id']; ?>"
+                    <?= $kota['nama_kota']; ?>
+                    <a href="<?= BASEURL; ?>/barang/hapus/<?= $kota['id']; ?>"
                         class="badge badge-danger float-right ml-1" onclick="return confirm ('yakin?')">Hapus</a>
-                    <a href="<?= BASEURL; ?>/barang/detail/<?= $mhs['id']; ?>"
+                    <a href="<?= BASEURL; ?>/barang/detail/<?= $kota['id']; ?>"
                         class="badge badge-primary float-right ml-2">Detail</a>
                 </li>
                 <?php endforeach; ?>
@@ -48,7 +48,7 @@
                         <input type="number" class="form-control" id="provinsi" name="provinsi">
                     </div>
                     
-                    <br>*2
+                    <br>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
