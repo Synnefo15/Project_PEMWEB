@@ -44,7 +44,7 @@
 							<h1 class="h1 text-success"><b>Panganku</b> </h1>
 							<h3 class="h2">Liat harga bahan pangan yang anda ingin tau</h3>
 							<p>
-								"Panganku" adalah website yang dapat anda gunakan untuk melihat harga bahan pangan kebutuhan pokok. Dengan "Panganku" anda dapat dengan mudah mengetahui harga pasaran bahan pangan yang dijual. 
+								"Panganku" adalah website yang dapat anda gunakan untuk melihat harga bahan pangan kebutuhan pokok. Dengan "Panganku" anda dapat dengan mudah mengetahui harga pasar bahan pangan yang dijual. 
 							</p>
 						</div>
 					</div>
