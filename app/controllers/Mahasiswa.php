@@ -4,7 +4,7 @@ class Mahasiswa extends Controller
     public function index()
     {
         $data['title'] = 'Daftar Mahasiswa';
-        $data['mhs'] = $this->model('Mahasiswa_model')->getAllMahasiswa();
+        $data['mhs'] = $this->model('Mahasiswa_model')->getAllBarang();
         $this->view('templates/header', $data);
         $this->view('mahasiswa/index', $data);
         $this->view('templates/footer');
@@ -13,7 +13,7 @@ class Mahasiswa extends Controller
     public function detail($id)
     {
         $data['title'] = 'Detail Mahasiswa';
-        $data['mhs'] = $this->model('Mahasiswa_model')->getMahasiswaById($id);
+        $data['mhs'] = $this->model('Mahasiswa_model')->getBarangById($id);
         $this->view('templates/header', $data);
         $this->view('mahasiswa/detail', $data);
         $this->view('templates/footer');
@@ -22,7 +22,7 @@ class Mahasiswa extends Controller
     // * flasher
     public function tambah()
     {
-        if ($this->model('Mahasiswa_model')->tambahDataMahasiswa($_POST) > 0) {
+        if ($this->model('Mahasiswa_model')->tambahDataBarang($_POST) > 0) {
             Flasher::setFlash('berhasil', 'ditambahkan', 'success');
             header('Location: ' . BASEURL . '/mahasiswa');
             exit;
@@ -34,7 +34,7 @@ class Mahasiswa extends Controller
     }
     public function hapus($id)
     {
-        if ($this->model('Mahasiswa_model')->hapusDataMahasiswa($id) > 0) {
+        if ($this->model('Mahasiswa_model')->hapusDataBarang($id) > 0) {
             Flasher::setFlash('berhasil', 'dihapus', 'success');
             header('Location: ' . BASEURL . '/mahasiswa');
             exit;

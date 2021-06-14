@@ -9,43 +9,21 @@ class Mahasiswa_model
         $this->db = new Database;
     }
 
-    // * manual 
-    // private $mhs = [
-    //     [
-    //         "nama" => "Muhammad Cahyo",
-    //         "nim" => "00921",
-    //         "email" => "cahya@email.com",
-    //         "jurusan" => "SI"
-    //     ],
-    //     [
-    //         "nama" => "Muhammad josep",
-    //         "nim" => "00911",
-    //         "email" => "josep@email.com",
-    //         "jurusan" => "SI"
-    //     ],
-    //     [
-    //         "nama" => "Jose morino",
-    //         "nim" => "00111",
-    //         "email" => "mroin@email.com",
-    //         "jurusan" => "TI"
-    //     ]
-    // ];
 
-
-    public function getAllMahasiswa()
+    public function getAllBarang()
     {
         $this->db->query('SELECT * FROM ' . $this->table);
         return $this->db->resultSet();
     }
 
-    public function getMahasiswaById($id)
+    public function getBarangById($id)
     {
         $this->db->query('SELECT * FROM ' . $this->table . ' WHERE id=:id');
         $this->db->bind('id', $id);
         return $this->db->single();
     }
 
-    public function tambahDataMahasiswa($data)
+    public function tambahDataBarang($data)
     {
         $query = "INSERT INTO kota
                     Values 
@@ -60,7 +38,7 @@ class Mahasiswa_model
         return $this->db->rowCount();
     }
 
-    public function hapusDataMahasiswa($id)
+    public function hapusDataBarang($id)
     {
         $query = "DELETE FROM kota WHERE id = :id";
         $this->db->query($query);
