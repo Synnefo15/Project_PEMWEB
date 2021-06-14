@@ -1,3 +1,5 @@
+<!-- Class database digunakan untuk setting database -->
+
 <?php
 class Database
 {

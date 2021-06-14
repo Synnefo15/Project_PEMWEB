@@ -1,3 +1,5 @@
+<!-- Class controller digunakan untuk seting view & model -->
+
 <?php
 class Controller
 {

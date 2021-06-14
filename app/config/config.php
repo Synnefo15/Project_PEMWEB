@@ -1,3 +1,5 @@
+<!-- Utk atur config awal -->
+
 <?php
 define('BASEURL', 'http://localhost/Project_PEMWEB/public');
 

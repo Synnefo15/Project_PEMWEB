@@ -1,3 +1,5 @@
+<!-- Class flasher digunakan untuk show flash message -->
+
 <?php
 class Flasher
 {
