@@ -63,7 +63,7 @@
 							<h3 class="h2">Lihat berita terkini seputar harga bahan pangan</h3>
 							<p>
 								Dengan "Panganku" anda akan mendapatkan informasi yang up to date mengenai kebutuhan pokok sehari-hari.
-								You are <strong>not permitted</strong> to re-distribute the template ZIP file in any kind of template collection websites.
+								Mulai dari berita maupun artikel yang akan membahas mengenai bahan pokok sehari-hari.
 							</p>
 						</div>
 					</div>
