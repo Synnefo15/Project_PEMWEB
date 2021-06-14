@@ -1,5 +1,5 @@
 <?php
-class Barang_model
+class Pangan_model
 {
     private $table = 'pangan';
     private $db;
@@ -10,20 +10,27 @@ class Barang_model
     }
 
 
-    public function getAllBarang()
+    public function getAllPangan()
     {
         $this->db->query('SELECT * FROM ' . $this->table);
         return $this->db->resultSet();
     }
 
-    public function getBarangById($id)
+    // Try
+    // public function getAllPangan()
+    // {
+    //     $this->db->query("SELECT pangan.*, kota.nama_kota FROM " . $this->table. "JOIN kota ON kota.id = pangan.kota" );
+    //     return $this->db->resultSet();
+    // }
+
+    public function getPanganById($id)
     {
         $this->db->query('SELECT * FROM ' . $this->table . ' WHERE id=:id');
         $this->db->bind('id', $id);
         return $this->db->single();
     }
 
-    public function tambahDataBarang($data)
+    public function tambahDataPangan($data)
     {
         $query = "INSERT INTO pangan
                     Values 
@@ -40,7 +47,7 @@ class Barang_model
         return $this->db->rowCount();
     }
 
-    public function hapusDataBarang($id)
+    public function hapusDataPangan($id)
     {
         $query = "DELETE FROM pangan WHERE id = :id";
         $this->db->query($query);
