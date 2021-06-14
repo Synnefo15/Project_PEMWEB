@@ -21,7 +21,7 @@
 				<h1>About Us</h1>
 				<p>
 					Kelompok kami beranggotakan:<br>1)Muhammad Rafi Cahyaputra 192410101029 |
-					<br>2) Aura Salsabila 1924101010xx
+					<br>2) Aura Salsabila 192410101015
 				</p>
 			</div>
 			<br>
