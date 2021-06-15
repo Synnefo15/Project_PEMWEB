@@ -1,60 +1,65 @@
-<div class="container mt-3">
-    <div class="row">
-        <div class="col-lg-6">
-            <?php Flasher::flash(); ?>
-        </div>
-    </div>
-
-    <div class="row p-5">
-        <div class="col-lg-6">
-            <!-- Button trigger modal -->
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#formModal">
-                Tambah Data pangan
-            </button>
-            <br><br>
-            <h3>Daftar pangan</h3>
-            <ul class="list-group">
-                <?php foreach ($data['pngn'] as $pngn) : ?>
-                <li class="list-group-item">
-                    <?= $pngn['komoditas']; ?>
-                    <a href="<?= BASEURL; ?>/pangan/hapus/<?= $pngn['id']; ?>"
-                        class="badge badge-danger float-right ml-1" onclick="return confirm ('yakin?')">Hapus</a>
-                    <a href="<?= BASEURL; ?>/pangan/detail/<?= $pngn['id']; ?>"
-                        class="badge badge-primary float-right ml-2">Detail</a>
-                </li>
-                <?php endforeach; ?>
-            </ul>
-        </div>
-    </div>
-</div>
-<!-- Modal -->
-<div class="modal fade" id="formModal" tabindex="-1" aria-labelledby="judulModal" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="judulModal">Tambah data pangan</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
+<div class="content-wrapper">
+    
+    <section class="content">
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title"><?= $data['title'] ?></h3>
+                <div class="btn-group float-right">
+                    <a href="<?= BASEURL; ?>/pangan/tambah" class="btn float-right btn-xs btn btn-primary">Tambah Barang
+                    </a>
+                    <a href="<?= BASEURL; ?>/pangan/laporan" class="btn float-right btn-xs btn btn-info">Laporan Barang</a>
+                    <a href="<?= BASEURL; ?>/pangan/lihatlaporan" class="btn float-right btn-xs btn btn-warning">Lihat Laporan Pangan</a>
+                </div>
             </div>
-            <div class="modal-body">
-                <form action="<?= BASEURL; ?>/pangan/tambah" method="POST">
-                    <div class="form-group">
-                        <label for="komoditas">Komoditas</label>
-                        <input type="text" class="form-control" id="komoditas" name="komoditas">
+            <div class="card-body">
+                <form action="<?= BASEURL; ?>/pangan/cari" method="post">
+                    <div class="row mb-3">
+                        <div class="col-lg-6">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="" name="key" >
+                                <div class="input-group-append">
+                                    <button class="btn btn-outline-secondary" type="submit">Cari Data</button>
+                                    <a class="btn btn-outline-danger" href="<?= BASEURL; ?>/pangan" >Reset</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label for="harga">Harga</label>
-                        <input type="number" class="form-control" id="harga" name="harga">
-                    </div>
-                    
-                    <br>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="submit" class="btn btn-primary">Tambah Data</button>
                 </form>
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th style="width: 10px">#</th>
+                            <th>Komoditas</th>
+                            <th>Kategori</th>
+                            <th>Kota</th>
+                            <th>Harga</th>
+                            <th style="width: 150px">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php $no=1; ?>
+                        <?php foreach ($data['pangan'] as $row) :?>
+                        <tr>
+                            <td><?= $no; ?></td>
+                            <td><?= $row['komoditas'];?></td>
+                            <td><?= $row['nama_kategori'];?></td>
+                            <td><?= $row['kota'];?></td>
+                            <td><?= $row['harga'];?></td>
+                            <td>
+                                <a href="<?= BASEURL; ?>/pangan/edit/<?= $row['id'] ?>" class="badge badge-info">Edit</a> <a href="<?= BASEURL; ?>/pangan/hapus/<?= $row['id'] ?>" class="badge badge-danger" onclick="return confirm('Hapus data?');">Hapus
+                                </a>
+                            </td>
+                        </tr>
+                        <?php $no++; endforeach; ?>
+                    </tbody>
+                </table>
+            </div>
+            <div class="card-footer">
+                
             </div>
         </div>
-    </div>
-</div> 
+        
+    </section>
+    <!-- ORI -->
+    
+</div>

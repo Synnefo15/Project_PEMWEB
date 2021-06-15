@@ -9,19 +9,19 @@ class Pangan_model
         $this->db = new Database;
     }
 
-
-    public function getAllPangan()
-    {
-        $this->db->query('SELECT * FROM ' . $this->table);
-        return $this->db->resultSet();
-    }
-
-    // Try
+    // ori
     // public function getAllPangan()
     // {
-    //     $this->db->query("SELECT pangan.*, kota.nama_kota FROM " . $this->table. "JOIN kota ON kota.id = pangan.kota" );
+    //     $this->db->query('SELECT * FROM ' . $this->table);
     //     return $this->db->resultSet();
     // }
+
+    // Try
+    public function getAllPangan()
+    {
+        $this->db->query("SELECT pangan.*, kategori.nama_kategori FROM " . $this->table. " JOIN kategori ON kategori.id = pangan.kategori" );
+        return $this->db->resultSet();
+    }
 
     public function getPanganById($id)
     {
@@ -30,31 +30,48 @@ class Pangan_model
         return $this->db->single();
     }
 
-    public function tambahDataPangan($data)
+    public function tambahPangan($data)
     {
-        $query = "INSERT INTO pangan
-                    Values 
-                    ('', :komoditas, :kategori, :kota, :harga)";
+        $query = "INSERT INTO pangan (komoditas, kategori, kota, harga) 
+        VALUES (:komoditas, :kategori, :kota, :harga)";
         $this->db->query($query);
         $this->db->bind('komoditas', $data['komoditas']);
         $this->db->bind('kategori', $data['kategori']);
         $this->db->bind('kota', $data['kota']);
-        $this->db->bind('harga', $data['harga']);
-        
-
+        $this->db->bind('harga', $data['harga']);      
         $this->db->execute();
 
         return $this->db->rowCount();
     }
 
-    public function hapusDataPangan($id)
+    public function deletePangan($id)
     {
-        $query = "DELETE FROM pangan WHERE id = :id";
-        $this->db->query($query);
+        $this->db->query (' DELETE FROM ' . $this->table . ' WHERE id = :id');
         $this->db->bind('id', $id);
-
         $this->db->execute();
 
         return $this->db->rowCount();
+    }
+    // try
+    public function updateDataPangan($data)
+    {
+        $query = "UPDATE pangan SET komoditas=:komoditas, kategori=:kategori, kota=:kota, harga=:harga WHERE id=:id";
+        $this->db->query($query);
+        $this->db->bind('id',$data['id']);
+        $this->db->bind('komoditas', $data['komoditas']);
+        $this->db->bind('kategori', $data['kategori']);
+        $this->db->bind('kota', $data['kota']);
+        $this->db->bind('harga', $data['harga']);
+        $this->db->execute();
+
+        return $this->db->rowCount();
+    }
+    // try
+    public function cariPangan()
+    {
+        $key = $_POST['key'];
+        $this->db->query("SELECT pangan.*, kategori.nama_kategori FROM " . $this->table. " JOIN kategori ON kategori.id = pangan.kategori WHERE komoditas LIKE :key ");
+        $this->db->bind('key',"%$key%");
+        return $this->db->resultSet();
     }
 }

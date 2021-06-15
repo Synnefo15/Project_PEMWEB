@@ -9,10 +9,12 @@
         <!-- ===Icon=== -->
         <link rel="apple-touch-icon" href="<?= BASEURL; ?>/img/apple-icon.png">
         <link rel="shortcut icon" type="image/x-icon" href="<?= BASEURL; ?>/img/panganku.ico">
+        <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
         <!-- Load css bootstrap -->
         <link rel="stylesheet" href="<?= BASEURL; ?>/css/bootstrap.min.css">
         <link rel="stylesheet" href="<?= BASEURL; ?>/css/templatemo.css">
         <link rel="stylesheet" href="<?= BASEURL; ?>/css/custom.css">
+        <link rel="stylesheet" href="<?= base_url; ?>/css/adminlte.min.css">
         <!-- Load fonts style  -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
         <link rel="stylesheet" href="<?= BASEURL; ?>/css/fontawesome.min.css">
@@ -55,13 +57,16 @@
                                 <a class="nav-link" href="<?= BASEURL; ?>">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="<?= BASEURL; ?>/barang">Pangan</a>
+                                <a class="nav-link" href="<?= BASEURL; ?>/pangan">Pangan</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="<?= BASEURL; ?>/kategori">Kategori</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="<?= BASEURL; ?>/about">About</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="contact.html">Contact</a>
+                                <a class="nav-link" href="<?= BASEURL; ?>/blog">Blogs</a>
                             </li>
                         </ul>
                     </div>
