@@ -5,9 +5,9 @@
             <div class="card-header">
                 <h3 class="card-title"><?= $data['title'] ?></h3>
                 <div class="btn-group float-right">
-                    <a href="<?= BASEURL; ?>/pangan/tambah" class="btn float-right btn-xs btn btn-primary">Tambah Barang
+                    <a href="<?= BASEURL; ?>/pangan/tambah" class="btn float-right btn-xs btn btn-primary">Tambah Pangan
                     </a>
-                    <a href="<?= BASEURL; ?>/pangan/laporan" class="btn float-right btn-xs btn btn-info">Laporan Barang</a>
+                    <!-- <a href="<?= BASEURL; ?>/pangan/laporan" class="btn float-right btn-xs btn btn-info">Laporan Pangan</a> -->
                     <a href="<?= BASEURL; ?>/pangan/lihatlaporan" class="btn float-right btn-xs btn btn-warning">Lihat Laporan Pangan</a>
                 </div>
             </div>

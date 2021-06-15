@@ -28,38 +28,38 @@ class Pangan extends Controller
     }
 
     // try
-    public function laporan()
-    {
-    $data['pangan'] = $this->model('Pangan_model')->getAllPangan();
-    $pdf = new FPDF('p','mm','A4');
-    // membuat halaman baru
-    $pdf->AddPage();
-    // setting jenis font yang akan digunakan
-    $pdf->SetFont('Arial','B',14);
-    // mencetak string
-    $pdf->Cell(190,7,'LAPORAN PANGAN',0,1,'C');
+    // public function laporan()
+    // {
+    // $data['pangan'] = $this->model('Pangan_model')->getAllPangan();
+    // $pdf = new FPDF('p','mm','A4');
+    // // membuat halaman baru
+    // $pdf->AddPage();
+    // // setting jenis font yang akan digunakan
+    // $pdf->SetFont('Arial','B',14);
+    // // mencetak string
+    // $pdf->Cell(190,7,'LAPORAN PANGAN',0,1,'C');
 
-    // Memberikan space kebawah agar tidak terlalu rapat
-    $pdf->Cell(10,7,'',0,1);
+    // // Memberikan space kebawah agar tidak terlalu rapat
+    // $pdf->Cell(10,7,'',0,1);
 
-    $pdf->SetFont('Arial','B',10);
-    $pdf->Cell(85,6,'Komoditas',1);
-    $pdf->Cell(30,6,'Kategori',1);
-    $pdf->Cell(30,6,'Kota',1);
-    $pdf->Cell(15,6,'Harga',1);
-    $pdf->Ln();
-    $pdf->SetFont('Arial','',10);
+    // $pdf->SetFont('Arial','B',10);
+    // $pdf->Cell(85,6,'Komoditas',1);
+    // $pdf->Cell(30,6,'Kategori',1);
+    // $pdf->Cell(30,6,'Kota',1);
+    // $pdf->Cell(15,6,'Harga',1);
+    // $pdf->Ln();
+    // $pdf->SetFont('Arial','',10);
 
-    foreach($data['pangan'] as $row) {
-    $pdf->Cell(85,6,$row['komoditas'],1);
-    $pdf->Cell(30,6,$row['kategori'],1);
-    $pdf->Cell(30,6,$row['kota'],1);
-    $pdf->Cell(15,6,$row['harga'],1);
-    $pdf->Ln();
-    }
+    // foreach($data['pangan'] as $row) {
+    // $pdf->Cell(85,6,$row['komoditas'],1);
+    // $pdf->Cell(30,6,$row['kategori'],1);
+    // $pdf->Cell(30,6,$row['kota'],1);
+    // $pdf->Cell(15,6,$row['harga'],1);
+    // $pdf->Ln();
+    // }
 
-    $pdf->Output('D', 'Laporan Pangan.pdf', true);
-    }
+    // $pdf->Output('D', 'Laporan Pangan.pdf', true);
+    // }
 
     // try
     public function cari()
