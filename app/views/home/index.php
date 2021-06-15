@@ -78,11 +78,11 @@
 					</div>
 					<div class="col-lg-6 mb-0 d-flex align-items-center">
 						<div class="text-align-left">
-							<h1 class="h1">Repr in voluptate</h1>
-							<h3 class="h2">Ullamco laboris nisi ut </h3>
+							<h1 class="h1 text-success"><b>Panganku</b></h1>
+							<h3 class="h2">Dengan Panganku anda akan terbantu </h3>
 							<p>
-								We bring you 100% free CSS templates for your websites.
-								If you wish to support TemplateMo, please make a small contribution via PayPal or tell your friends about our website. Thank you.
+								Cari harga kebutuhan bahan pokok dengan "Panganku".
+								Jika anda ingin mencari harga bahan pokok yang sesuai dengan kebutuhan anda, maka anda akan dengan mudah mencarinya di "Panganku".
 							</p>
 						</div>
 					</div>
