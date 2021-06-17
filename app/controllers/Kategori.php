@@ -80,4 +80,6 @@ class Kategori extends Controller {
 			exit;	
 		}
 	}
+
+	
 }
