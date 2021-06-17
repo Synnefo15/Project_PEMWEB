@@ -22,7 +22,7 @@
                 <div class="col-md-4 mt-3">
                     <div class="card mb-4 product-wap rounded-2">
                         <div class="card rounded-2">
-                            <img class="card-img rounded-2 img-fluid h-50" src="http://bkp.pertanian.go.id/storage/app/uploads/public/60c/6ba/a88/60c6baa889fa8900909732.jpeg">
+                            <img class="card-img rounded-2 img-fluid h-50" src="http://bkp.pertanian.go.id/storage/app/uploads/public/60c/603/2d8/60c6032d8e280031824859.jpeg">
                         </div>
                         
                         <div class="card-body bg-success ">
