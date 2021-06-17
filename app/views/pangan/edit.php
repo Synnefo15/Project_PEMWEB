@@ -27,7 +27,12 @@
             </div>
             <div class="form-group">
               <label >Kota</label>
-              <input type="text" class="form-control" placeholder="masukkan kota..." name="kota" value="<?= $data['pangan']['kota'];?>">
+              <select class="form-control" name="kota">
+                        <option value="">Pilih Kota</option>
+                         <?php foreach ($data['kota'] as $row) :?>
+                        <option value="<?= $row['id']; ?>"><?= $row['nama_kota']; ?></option>
+                        <?php endforeach; ?>
+              </select>
             </div>
             <div class="form-group">
               <label >Kategori</label>

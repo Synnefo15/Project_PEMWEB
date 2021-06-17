@@ -69,11 +69,11 @@
       <table class="table">
                   <thead>                  
                     <tr>
-                      <th style="width: 10px">#</th>
+                      <th style="width: 10px">No</th>
                       <th>Komoditas</th>
                       <th>Kategori</th>
-                      <th>Kota</th>
                       <th>Harga</th>                      
+                      <th>Kota</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -83,8 +83,8 @@
                       <td><?= $no; ?></td>
                       <td><?= $row['komoditas'];?></td>
                       <td><div class="badge badge-warning"><?= $row['nama_kategori'];?></div></td>
-                      <td><?= $row['kota'];?></td>                      
                       <td><?= $row['harga'];?></td>
+                      <td><div class=""><?= $row['nama_kota'];?></div></td>                      
                     </tr>
                     <?php $no++; endforeach; ?>
                   </tbody>

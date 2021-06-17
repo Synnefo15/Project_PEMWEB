@@ -74,7 +74,8 @@ class Pangan extends Controller
     // try
     public function tambah(){
         $data['title'] = 'Tambah Pangan';     
-        $data['kategori'] = $this->model('Kategori_model')->getAllKategori();        
+        $data['kategori'] = $this->model('Kategori_model')->getAllKategori();
+        $data['kota'] = $this->model('Kota_model')->getAllKota();                       
         $this->view('templates/header', $data);
         $this->view('pangan/create', $data);
         $this->view('templates/footer');
@@ -85,6 +86,7 @@ class Pangan extends Controller
 
             $data['title'] = 'Detail Pangan';
             $data['kategori'] = $this->model('Kategori_model')->getAllKategori();
+            $data['kota'] = $this->model('Kota_model')->getAllKota();                     
             $data['pangan'] = $this->model('Pangan_model')->getPanganById($id);
             $this->view('templates/header', $data);
             $this->view('pangan/edit', $data);

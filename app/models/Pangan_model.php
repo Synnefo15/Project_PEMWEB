@@ -19,7 +19,13 @@ class Pangan_model
     
     public function getAllPangan()
     {
-        $this->db->query("SELECT pangan.*, kategori.nama_kategori FROM " . $this->table. " JOIN kategori ON kategori.id = pangan.kategori" );
+        $this->db->query("
+
+        SELECT pangan.*, kategori.nama_kategori, kota.nama_kota 
+        FROM " . $this->table. " 
+        JOIN kategori ON kategori.id = pangan.kategori
+        JOIN kota ON kota.id =  pangan.kota ORDER BY id DESC " );
+        
         return $this->db->resultSet();
     }
 
@@ -33,7 +39,7 @@ class Pangan_model
     public function tambahPangan($data)
     {
         $query = "INSERT INTO pangan (komoditas, kategori, kota, harga) 
-        VALUES (:komoditas, :kategori, :kota, :harga)";
+        VALUES (:komoditas, :kategori, :kota, :harga) ";
         $this->db->query($query);
         $this->db->bind('komoditas', $data['komoditas']);
         $this->db->bind('kategori', $data['kategori']);
@@ -70,7 +76,10 @@ class Pangan_model
     public function cariPangan()
     {
         $key = $_POST['key'];
-        $this->db->query("SELECT pangan.*, kategori.nama_kategori FROM " . $this->table. " JOIN kategori ON kategori.id = pangan.kategori WHERE komoditas LIKE :key ");
+        $this->db->query("SELECT pangan.*, kategori.nama_kategori, kota.nama_kota 
+        FROM " . $this->table. " 
+        JOIN kategori ON kategori.id = pangan.kategori
+        JOIN kota ON kota.id =  pangan.kota WHERE komoditas LIKE :key ");
         $this->db->bind('key',"%$key%");
         return $this->db->resultSet();
     }

@@ -28,7 +28,7 @@
                 <table class="table table-bordered">
                     <thead>
                         <tr>
-                            <th style="width: 10px">#</th>
+                            <th style="width: 10px">No</th>
                             <th>Komoditas</th>
                             <th>Kategori</th>
                             <th>Kota</th>
@@ -43,7 +43,7 @@
                             <td><?= $no; ?></td>
                             <td><?= $row['komoditas'];?></td>
                             <td><?= $row['nama_kategori'];?></td>
-                            <td><?= $row['kota'];?></td>
+                            <td><?= $row['nama_kota'];?></td>
                             <td><?= $row['harga'];?></td>
                             <td>
                                 <a href="<?= BASEURL; ?>/pangan/edit/<?= $row['id'] ?>" class="badge badge-info">Edit</a> <a href="<?= BASEURL; ?>/pangan/hapus/<?= $row['id'] ?>" class="badge badge-danger" onclick="return confirm('Hapus data?');">Hapus
