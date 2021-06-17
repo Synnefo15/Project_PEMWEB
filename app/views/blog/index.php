@@ -43,7 +43,7 @@
                         </div>
                         
                         <div class="card-body bg-success ">
-                            <a href="http://bkp.pertanian.go.id/blog/post/stabilisasi-pasokan-dan-harga-jagung-kementan-bantu-distribusi-peternak-solo-raya" class="h3 text-decoration-none text-white">Stabilisasi pasokan dan harga jagung pakan terus diupayakan Kementerian Pertanian melalui subsidi distribusi jagung untuk pakan bagi para peternak layer kecil dan mandiri di wilayah Solo Raya, Jawa Tengah
+                            <a href="http://bkp.pertanian.go.id/blog/post/stabilisasi-pasokan-dan-harga-jagung-kementan-bantu-distribusi-peternak-solo-raya" class="h3 text-decoration-none text-white">Stabilisasi pasokan dan harga jagung pakan terus diupayakan Kementerian Pertanian melalui subsidi distribusi jagung untuk
                             </a>
                         </div>
                         <div class="card-body">
