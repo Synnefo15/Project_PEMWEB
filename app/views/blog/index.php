@@ -26,7 +26,7 @@
                         </div>
                         
                         <div class="card-body bg-success ">
-                            <a href="<?= BASEURL; ?>/blog/detail" class="h3 text-decoration-none text-white">Stabilkan Pasokan, Kementan Subsidi Distribusi Bawang Merah ke Maluku dan Daging Ayam ke Kaltara
+                            <a href="http://bkp.pertanian.go.id/blog/post/kementan-komitmen-turunkan-food-loss-and-waste" class="h3 text-decoration-none text-white">Jakarta –  Kementerian Pertanian berkomitmen penuh dalam upaya menurunkan food loss and waste (FLW)
                             </a>
                         </div>
                         <div class="card-body">
