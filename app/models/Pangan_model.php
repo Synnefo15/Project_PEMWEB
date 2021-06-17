@@ -16,7 +16,7 @@ class Pangan_model
     //     return $this->db->resultSet();
     // }
 
-    // Try
+    
     public function getAllPangan()
     {
         $this->db->query("SELECT pangan.*, kategori.nama_kategori FROM " . $this->table. " JOIN kategori ON kategori.id = pangan.kategori" );
@@ -52,7 +52,7 @@ class Pangan_model
 
         return $this->db->rowCount();
     }
-    // try
+    
     public function updateDataPangan($data)
     {
         $query = "UPDATE pangan SET komoditas=:komoditas, kategori=:kategori, kota=:kota, harga=:harga WHERE id=:id";
@@ -66,7 +66,7 @@ class Pangan_model
 
         return $this->db->rowCount();
     }
-    // try
+    
     public function cariPangan()
     {
         $key = $_POST['key'];
