@@ -30,7 +30,7 @@
                             </a>
                         </div>
                         <div class="card-body">
-                            <p class="h5">Stabilkan Pasokan, Kementan Subsidi Distribusi Bawang Merah ke Maluku dan Daging Ayam ke Kaltara...<a href="<?= BASEURL; ?>/blog/detail" title="" class="text-info">Selengkapnya</a> </p>
+                            <p class="h5">Dalam Webinar Strategi Pengelolaan Food Loss and Waste untuk Mendukung Ekonomi Sirkular dan Pembangunan Rendah Karbon...<a href="http://bkp.pertanian.go.id/blog/post/kementan-komitmen-turunkan-food-loss-and-waste" title="" class="text-info">Selengkapnya</a> </p>
                             
                         </div>                                                                                           
                     </div>
