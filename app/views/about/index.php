@@ -29,12 +29,12 @@
 				<div class="col-md-4">
 					<img src="<?= BASEURL; ?>/img/WIN_20210402_16_42_25_Pro.jpg" alt="ini gambar" width="200" height="200"
 					class="rounded-circle shadow">
-					<h5 class="text-center mt-3 mb-3">Rafi</h5>
+					<h5 class="text-center mt-3 mb-3">Muhammad Rafi Cahyaputra</h5>
 				</div>
 				<div class="col-md-4">
 					<img src="<?= BASEURL; ?>/img/WIN_20210402_16_42_27_Pro.jpg" alt="ini gambar" width="200" height="200"
 					class="rounded-circle shadow">
-					<h5 class="text-center mt-3 mb-3">Bila</h5>
+					<h5 class="text-center mt-3 mb-3">Aura Salsabila</h5>
 				</div>
 			</div>
 		</div>
