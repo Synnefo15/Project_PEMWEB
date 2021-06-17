@@ -43,11 +43,11 @@
                         </div>
                         
                         <div class="card-body bg-success ">
-                            <a href="<?= BASEURL; ?>/blog/detail" class="h3 text-decoration-none text-white">Stabilkan Pasokan, Kementan Subsidi Distribusi Bawang Merah ke Maluku dan Daging Ayam ke Kaltara
+                            <a href="http://bkp.pertanian.go.id/blog/post/stabilisasi-pasokan-dan-harga-jagung-kementan-bantu-distribusi-peternak-solo-raya" class="h3 text-decoration-none text-white">Stabilisasi pasokan dan harga jagung pakan terus diupayakan Kementerian Pertanian melalui subsidi distribusi jagung untuk pakan bagi para peternak layer kecil dan mandiri di wilayah Solo Raya, Jawa Tengah
                             </a>
                         </div>
                         <div class="card-body">
-                            <p class="h5">Stabilkan Pasokan, Kementan Subsidi Distribusi Bawang Merah ke Maluku dan Daging Ayam ke Kaltara...<a href="<?= BASEURL; ?>/blog/detail" title="" class="text-info">Selengkapnya</a> </p>
+                            <p class="h5">Stabilisasi pasokan dan harga jagung pakan terus diupayakan Kementerian Pertanian melalui subsidi distribusi jagung...<a href="http://bkp.pertanian.go.id/blog/post/stabilisasi-pasokan-dan-harga-jagung-kementan-bantu-distribusi-peternak-solo-raya" title="" class="text-info">Selengkapnya</a> </p>
                             
                         </div>                                                                                           
                     </div>
