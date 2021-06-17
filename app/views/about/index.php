@@ -27,12 +27,12 @@
 			<br>
 			<div class="row p-5">
 				<div class="col-md-4">
-					<img src="<?= BASEURL; ?>/img/WIN_20210402_16_42_24_Pro.jpg" alt="ini gambar" width="200" height="200"
+					<img src="<?= BASEURL; ?>/img/WIN_20210402_16_42_25_Pro.jpg" alt="ini gambar" width="200" height="200"
 					class="rounded-circle shadow">
 					<h5 class="text-center mt-3 mb-3">Rafi</h5>
 				</div>
 				<div class="col-md-4">
-					<img src="<?= BASEURL; ?>/img/WIN_20210402_16_42_24_Pro.jpg" alt="ini gambar" width="200" height="200"
+					<img src="<?= BASEURL; ?>/img/WIN_20210402_16_42_27_Pro.jpg" alt="ini gambar" width="200" height="200"
 					class="rounded-circle shadow">
 					<h5 class="text-center mt-3 mb-3">Bila</h5>
 				</div>
