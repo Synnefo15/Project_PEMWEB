@@ -11,11 +11,11 @@
 					</li>
 					<li>
 						<i class="fa fa-phone fa-fw"></i>
-						<a class="text-decoration-none" href="#">0813-3560-7024</a>
+						<a class="text-decoration-none" href="#">010-020-0340</a>
 					</li>
 					<li>
 						<i class="fa fa-envelope fa-fw"></i>
-						<a class="text-decoration-none" href="#">infopangan@company.com</a>
+						<a class="text-decoration-none" href="#">info@company.com</a>
 					</li>
 				</ul>
 			</div>
@@ -32,10 +32,8 @@
 				<h2 class="h4 text-light border-bottom pb-3 border-light">Info Lengkap</h2>
 				<ul class="list-unstyled text-light footer-link-list">
 					<li><a class="text-decoration-none" href="#">Home</a></li>
-					<li><a class="text-decoration-none" href="#">Pangan</a></li>
-					<li><a class="text-decoration-none" href="#">Kategori</a></li>
-					<li><a class="text-decoration-none" href="#">About</a></li>
-					<li><a class="text-decoration-none" href="#">Blogs</a></li>
+					<li><a class="text-decoration-none" href="#">About Us</a></li>
+					<li><a class="text-decoration-none" href="#">Shop Locations</a></li>
 					
 				</ul>
 			</div>
@@ -52,7 +50,7 @@
 				<div class="col-12">
 					<p class="text-left text-light">
 						PEMWEB B/2021
-						Kelompok 26| M.Rafi Cahyaputra 1924101029 | Aura Salsabila 192410101015
+						Kelompok M.Rafi Cahyaputra 1924101029 | Bila 1924101010
 					</p>
 				</div>
 			</div>
@@ -73,9 +71,9 @@ integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRk
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
 integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
 </script>
-<script src="<?= BASEURL; ?>/dist/js/adminlte.min.js"></script>
+<script src="<?= base_url; ?>/dist/js/adminlte.min.js"></script>
 <!-- AdminLTE for demo purposes -->
-<script src="<?= BASEURL; ?>/dist/js/demo.js"></script>
+<script src="<?= base_url; ?>/dist/js/demo.js"></script>
 <script src="<?= BASEURL; ?>/js/bootstrap.js"></script>
 <script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
 <script src="https://cdn.datatables.net/1.10.12/js/dataTables.bootstrap.min.js"></script>
