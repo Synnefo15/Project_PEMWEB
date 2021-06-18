@@ -1,13 +1,4 @@
-<!-- <div class="container">
-    <div class="jumbotron mt-4">
-        <h1 class="display-4">Selamat Datang di Website saya</h1>
-        <p class="lead">halo nama saya <?= $data['nama']; ?> </p>
-        <hr class="my-4">
-        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-    </div>
 
-</div> -->
 
 <!-- Modal -->
 <div class="modal fade bg-white" id="templatemo_search" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -113,18 +104,15 @@
             <div class="col-12 col-md-4 p-5 mt-3">
                 <a href="#"><img src="./img/kategori_beras.jpg" class="rounded-circle img-fluid border"></a>
                 <h5 class="text-center mt-3 mb-3">Beras</h5>
-                <p class="text-center"><a class="btn btn-success">Lihat</a></p>
             </div>
             <div class="col-12 col-md-4 p-5 mt-3">
                 <a href="#"><img src="./img/kategori_daging.jpg" class="rounded-circle img-fluid border"></a>
                 <h2 class="h5 text-center mt-3 mb-3">Daging</h2>
-                <p class="text-center"><a class="btn btn-success">Lihat</a></p>
             </div>
             <div class="col-12 col-md-4 p-5 mt-3">
                 <a href="#"><img src="./img/kategori_telur.jpg" class="rounded-circle img-fluid border"></a>
                 <h2 class="h5 text-center mt-3 mb-3">Telur</h2>
-                <p class="text-center"><a class="btn btn-success">Lihat</a></p>
             </div>
         </div>
     </section>
-    <!-- End Categories of The Month -->
+    <!-- End  -->

@@ -1,4 +1,4 @@
-<!-- Content Wrapper. Contains page content -->
+<!-- Content fluid-->
 <div class="content-fluid">
   <!-- Content Header (Page header) -->
   <section class="content-header">
@@ -82,7 +82,7 @@
     </section>
     <!-- /.content -->
   </div>
-  <!-- /.content-wrapper -->
+  <!-- /.content-fld -->
   <!-- <script>
 $(document).ready(function(){
 $('#table_kategori').DataTable();

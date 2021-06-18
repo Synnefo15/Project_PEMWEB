@@ -9,12 +9,7 @@ class Pangan_model
         $this->db = new Database;
     }
 
-    // ori
-    // public function getAllPangan()
-    // {
-    //     $this->db->query('SELECT * FROM ' . $this->table);
-    //     return $this->db->resultSet();
-    // }
+    
 
     
     public function getAllPangan()

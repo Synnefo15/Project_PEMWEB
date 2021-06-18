@@ -5,16 +5,15 @@
   <meta charset="utf-8">
   <title>Doc 1</title>
 
-  <!-- Normalize or reset CSS with your favorite library -->
+  <!-- Load css-->
   <link rel="stylesheet" href="<?= BASEURL ?>/css/normalize.min.css">
 
-  <!-- Load paper.css for happy printing -->
+  <!-- Load paper.css -->
   <link rel="stylesheet" href="<?= BASEURL ?>/css/paper.css">
   <link rel="shortcut icon" type="image/x-icon" href="<?= BASEURL; ?>/img/panganku.ico">
 
 
-  <!-- Set page size here: A5, A4 or A3 -->
-  <!-- Set also "landscape" if you need -->
+  <!-- atur page: A5, A4 or A3 -->
   <style type="text/css" media="print">
     @page 
     {
@@ -60,12 +59,10 @@
 </style>
 </head>
 
-<!-- Set "A5", "A4" or "A3" for class name -->
-<!-- Set also "landscape" if you need -->
+<!-- Set kertas -->
 <body class="A4 potrait">
 
-  <!-- Each sheet element should have the class "sheet" -->
-  <!-- "padding-**mm" is optional: you can set 10, 15, 20 or 25 -->
+  <!-- Atur layout -->
   <section class="sheet padding-15mm">
       <h1 class="center" style="text-decoration: underline;margin-top: 20px;"><?= $data['title'] ?></h1>
       <table class="table">

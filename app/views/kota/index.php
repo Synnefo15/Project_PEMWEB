@@ -1,4 +1,4 @@
-<!-- Content Wrapper. Contains page content -->
+<!-- Content -->
 <div class="content-fluid">
   <!-- Content Header (Page header) -->
   <section class="content-header">

@@ -12,19 +12,7 @@
                 </div>
             </div>
             <div class="card-body">
-                <!-- <form action="<?= BASEURL; ?>/pangan/cari" method="post">
-                    <div class="row mb-3">
-                        <div class="col-lg-6">
-                            <div class="input-group">
-                                <input type="text" class="form-control" placeholder="" name="key" >
-                                <div class="input-group-append">
-                                    <button class="btn btn-outline-secondary" type="submit">Cari Data</button>
-                                    <a class="btn btn-outline-danger" href="<?= BASEURL; ?>/pangan" >Reset</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </form> -->
+                
                 <div class="container" >
                     <table class="table table-bordered table-striped" id="table_pangan" style="width: 100%">
                         <thead>
@@ -62,20 +50,7 @@
     </div>
     
 </section>
-<!-- PAGING -->
-<!-- <nav aria-label="Page navigation example">
-    <ul class="pagination justify-content-center p-3">
-        <li class="page-item disabled">
-            <a class="page-link" href="#" tabindex="-1">Sebelumnya</a>
-        </li>
-        <li class="page-item"><a class="page-link" href="#">1</a></li>
-        <li class="page-item"><a class="page-link" href="#">2</a></li>
-        <li class="page-item"><a class="page-link" href="#">3</a></li>
-        <li class="page-item">
-            <a class="page-link" href="#">Selanjutnya</a>
-        </li>
-    </ul>
-</nav> -->
+
 </div>
 <script>
 $(document).ready(function(){

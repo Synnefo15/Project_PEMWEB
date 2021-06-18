@@ -114,19 +114,7 @@ class Pangan extends Controller
         }
     }
 
-    // * flasher
-    // public function tambah()
-    //     {
-    //     if ($this->model('Pangan_model')->tambahDataPangan($_POST) > 0) {
-    //     Flasher::setFlash('berhasil', 'ditambahkan', 'success');
-    //     header('Location: ' . BASEURL . '/pangan');
-    //     exit;
-    //     } else {
-    //     Flasher::setFlash('gagal', 'ditambahkan', 'danger');
-    //     header('Location: ' . BASEURL . '/pangan');
-    //     exit;
-    //     }
-    // }
+    
     
     public function updatePangan(){   
         if( $this->model('Pangan_model')->updateDataPangan($_POST) > 0 ) {

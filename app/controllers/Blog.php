@@ -18,14 +18,14 @@ class Blog extends Controller
         $this->view('templates/footer');
     }
 
-    public function detail()
-    {
-    	$data['title'] = 'detail berita';
-        $data['blog']= $this->model('Blog_model')->showCurl();
-        $this->view('templates/header', $data);
-        $this->view('blog/detail', $data);
-        $this->view('templates/footer');
+    // public function detail()
+    // {
+    // 	$data['title'] = 'detail berita';
+    //     $data['blog']= $this->model('Blog_model')->showCurl();
+    //     $this->view('templates/header', $data);
+    //     $this->view('blog/detail', $data);
+    //     $this->view('templates/footer');
 
         
-    }
+    // }
 }
