@@ -11,11 +11,11 @@
 					</li>
 					<li>
 						<i class="fa fa-phone fa-fw"></i>
-						<a class="text-decoration-none" href="#">010-020-0340</a>
+						<a class="text-decoration-none" href="#">0813-3560-7024</a>
 					</li>
 					<li>
 						<i class="fa fa-envelope fa-fw"></i>
-						<a class="text-decoration-none" href="#">info@company.com</a>
+						<a class="text-decoration-none" href="#">infopangan@company.com</a>
 					</li>
 				</ul>
 			</div>
@@ -32,8 +32,10 @@
 				<h2 class="h4 text-light border-bottom pb-3 border-light">Info Lengkap</h2>
 				<ul class="list-unstyled text-light footer-link-list">
 					<li><a class="text-decoration-none" href="#">Home</a></li>
-					<li><a class="text-decoration-none" href="#">About Us</a></li>
-					<li><a class="text-decoration-none" href="#">Shop Locations</a></li>
+					<li><a class="text-decoration-none" href="#">Pangan</a></li>
+					<li><a class="text-decoration-none" href="#">Kategori</a></li>
+					<li><a class="text-decoration-none" href="#">About</a></li>
+					<li><a class="text-decoration-none" href="#">Blogs</a></li>
 					
 				</ul>
 			</div>
@@ -50,7 +52,7 @@
 				<div class="col-12">
 					<p class="text-left text-light">
 						PEMWEB B/2021
-						Kelompok M.Rafi Cahyaputra 1924101029 | Bila 1924101010
+						Kelompok 26| M.Rafi Cahyaputra 1924101029 | Aura Salsabila 192410101015
 					</p>
 				</div>
 			</div>
