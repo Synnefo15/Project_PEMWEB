@@ -6,10 +6,10 @@
   <title>Doc 1</title>
 
   <!-- Normalize or reset CSS with your favorite library -->
-  <link rel="stylesheet" href="<?= base_url ?>/css/normalize.min.css">
+  <link rel="stylesheet" href="<?= BASEURL ?>/css/normalize.min.css">
 
   <!-- Load paper.css for happy printing -->
-  <link rel="stylesheet" href="<?= base_url ?>/css/paper.css">
+  <link rel="stylesheet" href="<?= BASEURL ?>/css/paper.css">
   <link rel="shortcut icon" type="image/x-icon" href="<?= BASEURL; ?>/img/panganku.ico">
 
 
