@@ -1,6 +1,6 @@
-<div class="content-wrapper">
+<div class="content-fluid">
     
-    <section class="content justify-content-center">
+    <section class="content">
         <div class="card">
             <div class="card-header">
                 <h3 class="card-title"><?= $data['title'] ?></h3>
@@ -11,7 +11,7 @@
                     <a href="<?= BASEURL; ?>/pangan/lihatlaporan" class="btn float-right btn-xs btn btn-warning">Lihat Laporan Pangan</a>
                 </div>
             </div>
-            <div class="card-body justify-content-center">
+            <div class="card-body">
                 <!-- <form action="<?= BASEURL; ?>/pangan/cari" method="post">
                     <div class="row mb-3">
                         <div class="col-lg-6">
@@ -25,7 +25,7 @@
                         </div>
                     </div>
                 </form> -->
-                <div class="container-fluid" >
+                <div class="container" >
                     <table class="table table-bordered table-striped" id="table_pangan" style="width: 100%">
                         <thead>
                             <tr>
@@ -34,7 +34,7 @@
                                 <th style="width: 100px">Kategori</th>
                                 <th style="width: 200px">Kota</th>
                                 <th style="width: 100px">Harga</th>
-                                <th style="width: 150px" class="justify-content-center">Action</th>
+                                <th style="width: 150px" class="">Action</th>
                             </tr>
                         </thead>
                         <tbody>
