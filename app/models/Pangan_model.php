@@ -24,7 +24,8 @@ class Pangan_model
         SELECT pangan.*, kategori.nama_kategori, kota.nama_kota 
         FROM " . $this->table. " 
         JOIN kategori ON kategori.id = pangan.kategori
-        JOIN kota ON kota.id =  pangan.kota ORDER BY id DESC " );
+        JOIN kota ON kota.id =  pangan.kota         
+        ORDER BY id DESC " );
         
         return $this->db->resultSet();
     }
